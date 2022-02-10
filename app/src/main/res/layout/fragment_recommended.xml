@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp_16">
+
+        <ImageView
+            android:id="@+id/image_movie_recommended"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/movie_poster_recommend_screen_content_desc" />
+
+        <ImageView
+            android:id="@+id/like_button"
+            android:layout_width="@dimen/dp_75"
+            android:layout_height="@dimen/dp_75"
+            android:layout_gravity="bottom|end"
+            android:cropToPadding="false"
+            android:src="@drawable/like"
+            android:contentDescription="@string/like_movie_button" />
+
+        <ImageView
+            android:id="@+id/wish_list_button"
+            android:layout_width="@dimen/dp_75"
+            android:layout_height="@dimen/dp_75"
+            android:layout_gravity="bottom|start"
+            android:cropToPadding="false"
+            android:src="@drawable/wishlist"
+            android:contentDescription="@string/add_to_wish_list" />
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

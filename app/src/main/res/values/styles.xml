@@ -1,0 +1,77 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ThemeOverlay.ActivityNoTitle" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ThemeOverlay.Buttons" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:layout_marginRight">@dimen/dp_8</item>
+        <item name="android:layout_marginLeft">@dimen/dp_8</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="CyanButtons" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/dp_120</item>
+        <item name="android:layout_margin">@dimen/dp_16</item>
+        <item name="android:layout_weight">7.5</item>
+        <item name="background">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="theme">@style/ThemeOverlay.Buttons</item>
+    </style>
+
+    <style name="ThemeOverlay.PurpleButton" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:layout_marginRight">@dimen/dp_8</item>
+        <item name="android:layout_marginLeft">@dimen/dp_8</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ThemeOverlay.DetailsText" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:padding">@dimen/dp_8</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="ThemeOverlay.FirebaseImageIcon" parent="AppTheme">
+        <item name="android:layout_marginTop">@dimen/dp_16</item>
+        <item name="android:layout_marginBottom">@dimen/dp_16</item>
+    </style>
+
+    <style name="ThemeOverlay.TextTitle" parent="AppTheme">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="ThemeFullScreen" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/ActionBarFullScreenStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="ActionBarFullScreenStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/blackColor</item>
+    </style>
+
+    <style name="BaseAppTheme" parent="android:Theme.Material" tools:targetApi="lollipop">
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowEnterTransition">@transition/explode</item>
+        <item name="android:windowExitTransition">@transition/explode</item>
+    </style>
+
+</resources>

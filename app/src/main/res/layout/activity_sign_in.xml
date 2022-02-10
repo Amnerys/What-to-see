@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/icon"
+            style="@style/ThemeOverlay.FirebaseImageIcon"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/firebase_logo_name"
+            android:src="@drawable/movie_clapper" />
+
+        <TextView
+            android:id="@+id/movie_nights_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/icon"
+            android:text="@string/main_screen_title"
+            android:textColor="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.TextTitle" />
+
+        <TextView
+            android:id="@+id/login_status"
+            android:layout_marginTop="@dimen/dp_20"
+            style="@style/ThemeOverlay.DetailsText"
+            android:layout_below="@id/icon"
+            android:layout_centerHorizontal="true"
+            android:text="@string/signed_out" />
+
+        <TextView
+            android:id="@+id/firebase_user_id"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/access_movies"
+            style="@style/ThemeOverlay.DetailsText"
+            tools:text="Firebase User ID: 123456789abc" />
+
+        <Button
+            android:id="@+id/access_movies"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/dp_8"
+            android:padding="@dimen/dp_8"
+            android:text="@string/start_button"
+            android:theme="@style/ThemeOverlay.Buttons" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:id="@+id/login_section"
+        android:background="@color/grey"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/edit_texts_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_8">
+
+            <EditText
+                android:id="@+id/email_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:autofillHints="Fill in your email address here" />
+
+            <EditText
+                android:id="@+id/password_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:autofillHints="Fill in your password here" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttons_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_texts_linear_layout"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_8">
+
+            <Button
+                android:id="@+id/button_sign"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sign_in"
+                android:theme="@style/ThemeOverlay.Buttons" />
+
+            <Button
+                android:id="@+id/button_create_account"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/create_account"
+                android:theme="@style/ThemeOverlay.Buttons" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_8"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/button_sign_out"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sign_out"
+                android:theme="@style/ThemeOverlay.Buttons" />
+
+            <Button
+                android:id="@+id/button_verify_email"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/verify_email"
+                android:theme="@style/ThemeOverlay.Buttons" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

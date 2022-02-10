@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_item_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_8"
+    android:weightSum="10">
+
+    <ImageView
+        android:id="@+id/widget_heart_icon"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp_8"
+        android:layout_weight="2"
+        android:contentDescription="@string/widget_movie_poster"
+        android:padding="@dimen/dp_8"
+        android:src="@drawable/icon_wish_list" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/widget_movie_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:padding="@dimen/dp_8"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"
+            android:textSize="@dimen/sp_14"
+            tools:text="Movie name" />
+
+        <TextView
+            android:id="@+id/widget_movie_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:padding="@dimen/dp_8"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Display2"
+            android:textSize="@dimen/sp_14"
+            tools:text="year" />
+    </LinearLayout>
+
+</LinearLayout>

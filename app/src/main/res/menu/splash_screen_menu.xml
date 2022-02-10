@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/edit_account_details"
+        android:title="@string/set_account_details" />
+    <item
+        android:id="@+id/clear_movie_list"
+        android:title="@string/clear_every_list" />
+</menu>

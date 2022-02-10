@@ -1,0 +1,116 @@
+<resources>
+
+    <string name="app_name">Movie Nights</string>
+    <string name="wish_list">Wish list</string>
+    <string name="recommended">Recommended</string>
+    <string name="like_history">Liked</string>
+
+    <string name="email_authentication_label">Email/Password Authentication</string>
+    <string name="authenticate_firebase_description">Authenticate with Firebase using an e-mail and password.</string>
+
+    <string name="only_email_label">Authentication without using a password</string>
+    <string name="only_email_description">Use only an email to authenticate with Firebase.</string>
+
+    <string name="anonymous_authentication_label">Anonymous Authentication</string>
+    <string name="description_anonymous_authentication">Sign in anonymously. You can later user a Firebase user.</string>
+
+    <string name="firebase_ui_label">FirebaseUI Authentication</string>
+    <string name="description_firebase_ui">Use the FirebaseUI-Android library to authenticate using Firebase.</string>
+
+    <string name="id_user_hint">User ID</string>
+    <string name="get_custom_token">Get custom Token</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="send_link">Send Link</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="now_loading">Now Loading…</string>
+    <string name="custom_token">Custom Token</string>
+    <string name="signed_in">Signed In</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="token_null">Token: null</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="firebase_logo_name">Firebase name and logo</string>
+    <string name="authentication_failed">Authentication failed</string>
+    <string name="start_telephone_authentication">Start</string>
+    <string name="verify_telephone_authentication">Verify</string>
+    <string name="re_send_authentication">Re-send</string>
+    <string name="telephone_number">Telephone Number</string>
+    <string name="code_verification">Verification Code</string>
+    <string name="sent_code">Verification Sent</string>
+    <string name="verification_failure">Verification failure</string>
+    <string name="verification_completed">Verification completed</string>
+    <string name="sign_in_failure">SignIn failure</string>
+    <string name="instant_validate">(instant validate)</string>
+
+    <string name="firebase_user">Firebase User: %s</string>
+    <string name="firebase_user_management">Firebase User Management</string>
+
+    <string name="main_screen_status">Email User: %1$s (verified: %2$b)</string>
+    <string name="main_screen_title">Movie Nights</string>
+
+    <string name="email_user">Email User: %1$s (verified: %2$b)</string>
+    <string name="sign_mail_only">SignIn using an e-mail only</string>
+    <string name="not_sent_email">Send up an email with the link.</string>
+    <string name="sent_email">Check your email for confirmation link.</string>
+    <string name="link_received">Confirmation received: use your email to sign in.</string>
+
+    <string name="phone_text">Phone Number</string>
+
+    <string name="firebase_ui_status">Firebase User: %s</string>
+    <string name="firebase_ui_title">FirebaseUI Authentication</string>
+
+    <string name="user_id">User ID: %s</string>
+    <string name="user_email">Email: %s</string>
+
+    <string name="title_screen_activity">Screen Activity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="release_year">Year of release</string>
+    <string name="appwidget_text">Widget</string>
+    <string name="add_widget">Add widget</string>
+    <string name="configure">Configure Widget</string>
+
+    <string name="no_movies_widget">No movies in Wish List!</string>
+    <string name="collapsing_toolbar">Movie Name</string>
+    <string name="long_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas lacus tincidunt risus malesuada iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras ullamcorper varius gravida. Mauris ac metus viverra, pulvinar tortor non, dapibus nisi. Fusce convallis neque sapien, vel porta dui eleifend vitae. Vivamus vulputate massa eget metus semper lacinia. Morbi sem nisl, aliquam et elementum eu, semper et dui. Donec vehicula, ipsum a lobortis fermentum, enim nisi blandit sapien, vel maximus dolor erat eget neque. .</string>
+
+    <!-- Strings for parceling -->
+    <string name="RECOMMENDED_MOVIE">RECOMMENDED_MOVIE</string>
+    <string name="PARCELED_MOVIE">PARCELED_MOVIE</string>
+    <string name="LIKED_MOVIES">LIKED_MOVIES</string>
+    <string name="widget_wish_list">Wish list</string>
+    <string name="clear_every_list">Clear all lists</string>
+    <string name="set_account_details">Set Account Details</string>
+    <string name="movie_poster_fragment_like_content_scr">Movie Poster</string>
+    <string name="movie_poster_recommend_screen_content_desc">Movie poster</string>
+    <string name="dislike_movie_button">dislike movie button</string>
+    <string name="like_movie_button">like movie button</string>
+    <string name="add_to_wish_list">Add to wish list</string>
+    <string name="widget_movie_poster">Widget movie poster</string>
+    <string name="wish_list_splash_activity_icon">Wish list splash activity icon</string>
+    <string name="new_movie_icon_activity_splash">New movie icon activity splash</string>
+    <string name="like_history_icon_splash_activity">Like icon splash activity</string>
+    <string name="movie_poster_fragment_wish_list">Movie poster fragment wish list</string>
+    <string name="image_widget_general">Image view widget</string>
+    <string name="toolbar_detail">toolbar image detail</string>
+    <string name="widget_name_field">Enter a name for the widget</string>
+    <string name="title_summary">Summary:</string>
+    <string name="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas lacus tincidunt risus malesuada iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras ullamcorper varius gravida. Mauris ac metus viverra, pulvinar tortor non, dapibus nisi. Fusce convallis neque sapien, vel porta dui eleifend vitae. Vivamus vulputate massa eget metus semper lacinia. Morbi sem nisl, aliquam et elementum eu, semper et dui. Donec vehicula, ipsum a lobortis fermentum, enim nisi blandit sapien, vel maximus dolor erat eget neque. </string>
+    <string name="start_button">Start discovering movies</string>
+    <string name="recommended_name">RECOMMENDED NAME</string>
+    <string name="movie_added_wish_list">The movie is added to your wish list</string>
+    <string name="movie_added_like">The movie has been added to your like list</string>
+    <string name="movie_added_dislike">The movie has been added to your dislike list</string>
+    <string name="disable_like_dislike"><![CDATA[Disabled the like and dislike buttons]]></string>
+    <string name="disable_wish_dislike"><![CDATA[Disabled the wish list and dislike buttons]]></string>
+    <string name="disable_like_wish"><![CDATA[Disabled the like and wish list buttons]]></string>
+    <string name="Required_error">Required field</string>
+    <string name="Edit_account_details">Edit Account Details clicked</string>
+    <string name="Clear_movie_list">Cleared user wish list!</string>
+
+</resources>
